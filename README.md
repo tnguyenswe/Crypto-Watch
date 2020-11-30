@@ -1,5 +1,7 @@
 # Crypto-Watch
 
+You can view the project at https://tnguyenswe.github.io/Crypto-Watch/
+
 Crypto Watch is a web application built using Javascript, HTML, and CSS.
 
 I also used the Cryptonator API for real-time Cryptocurrency prices & used the Twilio API along with Node.JS to setup SMS notifications.
