@@ -1,0 +1,174 @@
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <title> Crypto Watch
+  </title>
+  <link rel="icon" href="logo.png" type="image/x-icon">
+
+  <style>
+    a{color: white; text-decoration: none;}
+    a:visited { text-decoration: none; color:white; }
+    a:hover { text-decoration: none; color:white; }
+    a:focus { text-decoration: none; color:white; }
+    a:hover, a:active { text-decoration: none; color:white }
+
+    html, body{
+      z-index:-1;
+      min-width:100%;
+      min-height:100%;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    /* Header/Logo Title */
+    .header {
+      padding: 10px 10px;
+      text-align: center;
+      background: #37587A;
+      color: white;
+      font-size: 30px;
+      font-family: 'Hind', sans-serif;
+      font-weight: 900;
+    }
+
+    .crypto_watch{
+      float: center;
+      display: inline-block;
+      font-size: 30px;
+      font-family: 'Hind', sans-serif;
+    }
+
+    .center{
+      text-align: center;
+      float: center;
+      display: inline-block;
+      width: 100%;
+    }
+    .container{
+      position: relative;
+      margin-top: 5%;
+      width: 80%;
+      /*margin-left: 20%;*/
+      margin-left: 10%;
+      margin-right: 10%;
+      height: 50%;
+    }
+
+    #promocontent {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px;
+    }
+    #promocontent > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;       /* horizontally center child elements */
+      text-align: center;        /* horizontally center text on narrow screens;
+                                    see http://stackoverflow.com/q/39678610/3597276 */
+    }
+
+  </style>
+
+  <script type="text/javascript">
+    function crypto()
+    {
+      var crypto_chosen = document.getElementById("crypto_chosen").value;
+      alert("Value is" + crypto_chosen);
+    }
+  </script>
+
+</head>
+<body>
+
+  <div class="header">
+    <a href="./index.html">
+      Crypto Watch
+          </a>
+
+  </div>
+
+
+
+  <br>
+  <img src="logo.png" alt="Crypto Watch Logo" style="width: 100px; height: 85px;   display: block;
+  margin-left: auto;
+  margin-right: auto;">
+  <br>
+
+  <p1 class="center" style="font-family: 'Noto Sans KR', sans-serif; font-size: 20px;">
+    View Cryptocurrency prices and setup alerts for price changes
+  </p1>
+
+  <br>
+
+  <div class="text_stuff">
+    <div class="container">
+      <div id="promocontent">
+        <div class="image_wrapper">
+          <a href="btc.html"
+          <p>
+          <img src="btc-logo.png" style="width: 75px; height: 75px;">
+          </p>
+          <p class="caption" style="font-family: 'Noto Sans JP', sans-serif; color: black;"> Bitcoin (BTC) </p>
+        </a>
+        </div>
+
+        <div class="image_wrapper">
+          <a href="eth.html"
+          <p>
+          <img src="eth-logo.png" style="width: 62.5px; height: 75px;">
+          </p>
+          <p class="caption" style="font-family: 'Noto Sans JP', sans-serif; color: black;"> Ethereum (ETH) </p>
+        </a>
+        </div>
+
+        <div class="image_wrapper">
+          <a href="ltc.html"
+          <p>
+          <img src="ltc-logo.png" style="width: 75px; height: 75px;">
+          </p>
+          <p class="caption" style="font-family: 'Noto Sans JP', sans-serif; color: black;"> Litecoin (LTC) </p>
+        </a>
+        </div>
+
+        <div class="image_wrapper">
+          <a href="xrp.html"
+          <p>
+          <img src="xrp-logo.png" style="width: 62.5px; height: 75px;">
+          </p>
+          <p class="caption" style="font-family: 'Noto Sans JP', sans-serif; color: black;"> Ripple (XRP) </p>
+        </a>
+        </div>
+
+        <div class="image_wrapper">
+          <a href="ada.html"
+          <p>
+          <img src="ada-logo.png" style="width: 62.5px; height: 75px;">
+          </p>
+          <p class="caption" style="font-family: 'Noto Sans JP', sans-serif; color: black;"> Cardano (ADA) </p>
+        </a>
+        </div>
+
+        <div class="image_wrapper">
+          <a href="xvg.html"
+          <p>
+          <img src="xvg-logo.png" style="width: 62.5px; height: 75px;">
+          </p>
+          <p class="caption" style="font-family: 'Noto Sans JP', sans-serif; color: black;"> Verge (XVG) </p>
+        </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+
+
+</body>
+</html>

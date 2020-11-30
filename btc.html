@@ -1,0 +1,183 @@
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <title> Crypto Watch
+  </title>
+  <link rel="icon" href="logo.png" type="image/x-icon">
+
+  <style>
+
+    input:focus {
+        outline:none;
+    }
+
+    a{color: white; text-decoration: none;}
+    a:visited { text-decoration: none; color:white; }
+    a:hover { text-decoration: none; color:white; }
+    a:focus { text-decoration: none; color:white; }
+    a:hover, a:active { text-decoration: none; color:white }
+
+    html, body{
+      z-index:-1;
+      min-width:100%;
+      min-height:100%;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    /* Header/Logo Title */
+    .header {
+      padding: 10px 10px;
+      text-align: center;
+      background: #37587A;
+      color: white;
+      font-size: 30px;
+      font-family: 'Hind', sans-serif;
+      font-weight: 900;
+    }
+
+    .crypto_watch{
+      float: center;
+      display: inline-block;
+      font-size: 30px;
+      font-family: 'Hind', sans-serif;
+    }
+
+    .center{
+      text-align: center;
+      float: center;
+      display: inline-block;
+      width: 100%;
+    }
+    .container{
+      position: relative;
+      margin-top: 5%;
+      width: 50%;
+      margin-left: 25%;
+      height: 50%;
+    }
+
+    .relative_container{
+      position: relative;
+      /*background-color: blue;*/
+    }
+
+
+    #promocontent {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px;
+    }
+    #promocontent > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;       /* horizontally center child elements */
+      text-align: center;        /* horizontally center text on narrow screens;
+                                    see http://stackoverflow.com/q/39678610/3597276 */
+    }
+  </style>
+
+  <script type="text/javascript">
+    function crypto()
+    {
+      try{
+        var phone_number = document.getElementById("phone_number").value;
+        var percent_change = document.getElementById("percent_change").value;
+
+
+        if(phone_number != "" && percent_change != ""){
+          if (isNaN(phone_number) == false && isNaN(percent_change) == false){
+            phone_number = Number(phone_number);
+            percent_change = Number(percent_change);
+            //alert("Value is" + phone_number + percent_change);
+            alert("Setup alert for " + percent_change + "% difference. The SMS will be sent to " + phone_number + " when the change is detected." );
+          }else{
+            alert("Please make sure to put in only numbers in both fields.");
+          }
+        }else{
+          alert("Please fill out both fields.");
+        }
+      }
+      catch(err){
+        alert("Error, please make sure your inputs are numeric.");
+      }
+    }
+  </script>
+
+</head>
+<body>
+
+  <div class="header">
+    <a href="./index.html">
+      Crypto Watch
+          </a>
+
+  </div>
+
+
+
+  <br>
+  <img src="btc-logo.png" alt="Crypto Watch Logo" style="width: 100px; height: 100px;   display: block;
+  margin-left: auto;
+  margin-right: auto;">
+  <br>
+
+  <p1 class="center" style="font-family: 'Noto Sans KR', sans-serif; font-size: 20px;">
+    Bitcoin (BTC) <br>
+
+    <p> Price in USD (Real-time): $<span id="price"></span>
+    </p>
+  </p1>
+  <script>
+    const api_url = 'https://api.cryptonator.com/api/ticker/btc-usd';
+
+    async function getBTCPrice() {
+      const response = await fetch(api_url);
+      const data = await response.json();
+
+      console.log(data.ticker.price);
+
+      const price = data.ticker.price;
+      //const time = data.
+      document.getElementById('price').textContent = price;
+    }
+
+    getBTCPrice();
+
+    setInterval(getBTCPrice, 15000);
+
+  </script>
+
+
+  <br>
+
+
+
+  <br>
+
+  <div class="relative_container">
+    <div class="center">
+      <input id="phone_number" placeholder="Phone Number" style="padding:10px; border-radius:10px;">
+      <br><br>
+      <input id="percent_change" placeholder="% Change" style="padding:10px; border-radius:10px;">
+      <br><br>
+      <button onclick="crypto()" style="  /* remove default behavior */
+  appearance:none;
+  -webkit-appearance:none;
+
+  /* usual styles */
+  padding:10px;
+  border:none;
+  background-color:#37587A;
+  color:#fff;
+  font-weight:600;
+  border-radius:5px;"> Submit </button>
+  </div>
+  </div>
+
+</body>
+</html>
