@@ -2,9 +2,11 @@
 
 Crypto Watch is a web application built using Javascript, HTML, and CSS.
 
-I also used the Cryptonator API for real-time Cryptocurrency prices.
+I also used the Cryptonator API for real-time Cryptocurrency prices & used the Twilio API along with Node.JS to setup SMS notifications.
 
-The API can be found here: https://www.cryptonator.com/api
+The API's can be found here: 
+https://www.cryptonator.com/api
+https://www.twilio.com/docs/sms
 
 This web application allows you to check real time Cryptocurrency prices as well as setup SMS notifications when a certain price change of your choosing is detected. Here are some demo photos:
 
