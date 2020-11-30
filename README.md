@@ -1,11 +1,10 @@
 # Crypto-Watch
 
-Dependencies:
+Crypto Watch is a web application built using Javascript, HTML, and CSS. 
 
-```
-pip3 install alpha-vantage
+I also used the Cryptonator API for real-time Cryptocurrency prices.
 
-pip3 install matplotlib
+The API can be found here: https://www.cryptonator.com/api
 
-pip3 install pandas
-```
+This web application allows you to check real time Cryptocurrency prices as well as setup SMS notifications when a certain price change of your choosing is detected. Here are some demo photos:
+
