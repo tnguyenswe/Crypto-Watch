@@ -12,9 +12,9 @@ https://www.twilio.com/docs/sms
 
 This web application allows you to check real time Cryptocurrency prices as well as setup SMS notifications when a certain price change of your choosing is detected. Here are some demo photos:
 
-<img src="https://github.com/tnguyenswe/Crypto-Watch/blob/master/Demo%20Photos/Screen%20Shot%202020-11-29%20at%205.30.32%20PM.png" width="450" height="250"> 
+<img src="https://github.com/tnguyenswe/Crypto-Watch/blob/master/Demo%20Photos/Screen%20Shot%202020-11-29%20at%205.30.32%20PM.png" width="810" height="450"> 
 
-<img src="https://github.com/tnguyenswe/Crypto-Watch/blob/master/Demo%20Photos/Screen%20Shot%202020-11-29%20at%205.30.50%20PM.png" width="500" height="250">
+<img src="https://github.com/tnguyenswe/Crypto-Watch/blob/master/Demo%20Photos/Screen%20Shot%202020-11-29%20at%205.30.50%20PM.png" width="810" height="405">
 
 
 
